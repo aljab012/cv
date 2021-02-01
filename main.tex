@@ -1,0 +1,196 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[10pt,a4paper,roman]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% modern themes
+\moderncvstyle{banking}                            % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue}                                % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+\usepackage[utf8]{inputenc}
+\usepackage{fontawesome}
+\usepackage{fontspec}
+\usepackage{tabularx}
+\usepackage{ragged2e}
+% if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[scale=0.8]{geometry}
+\usepackage{multicol}
+
+
+\usepackage{import}
+
+% personal data
+%1016 Washington Ave SE
+%Minneapolis, MN  55414
+%United States
+\name{Alhaitham}{Al Jabri}
+ % \title{Curriculum Vitae}                               % optional, remove / comment the line if not wanted
+\address{ }{}{}% optional, remove / 
+
+\newcommand*{\customcventry}[7][.25em]{
+  \begin{tabular}{@{}l} 
+    {\bfseries #4}
+  \end{tabular}
+  \hfill% move it to the right 
+  \begin{tabular}{l@{}}
+     {\bfseries #5}
+  \end{tabular} \\
+  \begin{tabular}{@{}l} 
+    {\itshape #3}
+  \end{tabular}
+  \hfill% move it to the right
+  \begin{tabular}{l@{}}
+     {\itshape #2}
+  \end{tabular}
+  \ifx&#7&%
+  \else{\\%
+    \begin{minipage}{\maincolumnwidth}%
+      \small#7%
+    \end{minipage}}\fi%
+  \par\addvspace{#1}}
+
+  
+  
+\newcommand*{\customcvproject}[4][.25em]{
+%   \vfill\noindent
+  \begin{tabular}{@{}l} 
+    {\bfseries #2}
+  \end{tabular}
+  \hfill% move it to the right
+  \begin{tabular}{l@{}}
+     {\itshape #3}
+  \end{tabular}
+  \ifx&#4&%
+  \else{\\%
+    \begin{minipage}{\maincolumnwidth}%
+      \small#4%
+    \end{minipage}}\fi%
+  \par\addvspace{#1}}
+
+\setlength{\tabcolsep}{12pt}
+
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+\vspace*{-23mm}
+
+\begin{center}
+\begin{tabular}{ c c c c }
+ \faEnvelopeO\enspace aljab012@umn.edu & \faGithub\enspace aljab012 & \faMobile\enspace 612-479-2144  & \faLinkedin \enspace /in/alhaitham/   \\  
+\end{tabular}
+\end{center}
+% \vspace{2mm}
+
+
+\section{EDUCATION}
+{\customcventry{Jan 2017 - Dec 2020 }{B.S. Computer Science, \textbf{GPA: 3.56/4.00} }{University of Minnesota Twin Cities}{Minneapolis, MN}{}{}}
+
+% \vspace{1mm}
+
+\textbf{Relevent Coursework:} 
+{\begin{itemize}
+\item CSCI 5421: Advanced Algorithms and Data Structures
+\item CSCI 5611: Animation and Planning in Games
+\item CSCI 4511W: Introduction to Artificial Intelligence
+\item CSCI 4131: Internet Programming
+\item CSCI 4707: Practice of Database Systems
+\item CSCI 3081W: Program Design and Development
+
+\end{itemize}
+}
+
+\section{EXPERIENCE}
+
+{\customcventry{Sept 2016 - Aug 2017}{Security Monitor}{University Security, University of Minnesota Twin Cities}{Minneapolis, MN}{}
+{\begin{itemize}
+  \item Monitored buildings and checked for all doors and windows and ensured their safety.
+  \item Investigated any matter of rule violation and complaints.
+  \item Detected suspicious activities and watched for criminal acts and rule infractions.
+\end{itemize}
+}
+
+% \vspace{2mm}
+
+
+\section{PROJECTS}{
+
+{
+    \customcvproject{\textbf{Buy and Sell Web Application - Coursework:}}{Sept 2019}
+{\begin{itemize}
+  \item Built an interactive Flask web application that allowed students to sign up and log in to the website.
+  \item Developed the app to allow students to sell and buy books and publish events on the website.
+  \item Incorporated the use of multiple frameworks and libraries such as SqlAlchemy, WTForms, and Bootstrap.
+\end{itemize}
+}
+
+{\customcvproject{\textbf{Single Agent Navigation AI Simulation - Coursework:}}{Jul 2020}
+{\begin{itemize}
+  \item Developed an app using Processing framework that simulates single-agent navigation system. 
+  \item Built a 3D graphic window that displays a moving boat navigating between obstacles. 
+  \item Allowed the user to specify the starting and the ending positions of the agent or assigned it randomly by the program.
+\end{itemize}
+}
+{\customcvproject{\textbf{Boids and Flocking Simulation - Coursework:} }{Jul 2020 }
+{\begin{itemize}
+  \item Created multi-agent flocking simulation using processing framework.
+  \item Simulated systems of multiple interacting particles in 2D.
+  \item Allowed the user to interact with the simulation using a mouse or keyboard for a better user experience.
+\end{itemize}
+}
+}}}}
+\section{SKILLS}
+
+{\customcvproject{Languages and Frameworks}{}
+{\begin{itemize}
+  \item Java, Javascript, HTML/CSS, C/C++, Python, Ocaml, SQL, x86 Assembly and Flask.
+\end{itemize}
+}
+{\customcvproject{IDEs}{}
+{\begin{itemize}
+  \item Emacs, IntelliJ, Clion, Atom, Visual Studio/Code and XCode.
+\end{itemize}
+}
+}
+}
+
+
+\section{LEADERSHIP}
+\begin{minipage}{\maincolumnwidth}%
+	\small{
+    	\begin{itemize}
+          \item \customcvproject{Association for Computing Machinery - Member}{ Jan 2017 - Sept 2019}{}
+          \item \customcvproject{Omani Students Union - Member}{Jan 2017 - Sept 2020}{}
+		\end{itemize}}%
+\end{minipage}%
+
+\section{AWARDS}
+\begin{minipage}{\maincolumnwidth}%
+	\small{
+    	\begin{itemize}
+          \item \customcvproject{College of Science and Engineering Dean’s list}{ Fall 2019 and Spring 2019}{}
+          \item \customcvproject{Ministry of Higher Education - Oman, Full-ride merit scholarship to attend the UMN}{Sept 2015}{}
+		\end{itemize}}%
+\end{minipage}%
+}
+% Publications from a BibTeX file without multibib
+%  for numerical labels: \renewcommand{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% CONSIDER MERGING WITH PREAMBLE PART
+%  to redefine the heading string ("Publications"): \renewcommand{\refname}{Articles}
+\nocite{*}
+\bibliographystyle{plain}
+\bibliography{publications}                        % 'publications' is the name of a 
+\end{document}
