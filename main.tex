@@ -8,6 +8,7 @@
 
 \documentclass[10pt,a4paper,roman]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
 
+
 % modern themes
 \moderncvstyle{banking}                            % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
 \moderncvcolor{blue}                                % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
@@ -36,7 +37,8 @@
 %United States
 \name{Alhaitham}{Al Jabri}
  % \title{Curriculum Vitae}                               % optional, remove / comment the line if not wanted
-\address{ }{}{}% optional, remove / 
+ 
+\address{2515 University Ave SE}{Minneapolis, MN 55414}{United States}% optional, remove / 
 
 \newcommand*{\customcventry}[7][.25em]{
   \begin{tabular}{@{}l} 
@@ -90,35 +92,37 @@
 \vspace*{-23mm}
 
 \begin{center}
-\begin{tabular}{ c c c c }
- \faEnvelopeO\enspace aljab012@umn.edu & \faGithub\enspace aljab012 & \faMobile\enspace 612-479-2144  & \faLinkedin \enspace /in/alhaitham/   \\  
+\begin{tabular}{ c c c c c }
+ \faEnvelopeO\enspace aljab012@umn.edu & \faGlobe\enspace \href{https://jabri.dev}{https://jabri.dev} & \faGithub\enspace \href{https://github.com/aljab012}{aljab012} & \faMobile\enspace 612-479-2144  & \faLinkedin \enspace \href{https://www.linkedin.com/in/alhaitham/}{/in/alhaitham}   \\  
 \end{tabular}
 \end{center}
 % \vspace{2mm}
 
 
 \section{EDUCATION}
-{\customcventry{Jan 2017 - Dec 2020 }{B.S. Computer Science, \textbf{GPA: 3.56/4.00} }{University of Minnesota Twin Cities}{Minneapolis, MN}{}{}}
+{\customcventry{Jan 2017 - Dec 2020 }{B.S. in Computer Science, GPA: 3.56/4.00 }{University of Minnesota-Twin Cities}{Minneapolis, MN}{}{\vspace{2mm} \textbf{Relevent Coursework:} Advanced Algorithms and Data Structures (Grad). Animation and Planning in Games (Grad). Introduction to Artificial Intelligence. Internet Programming. Practice of Database Systems. Programming Graphics and Games. Program Design and Development.}}
 
-% \vspace{1mm}
+\vspace{1mm}
 
-\textbf{Relevent Coursework:} 
-{\begin{itemize}
-\item CSCI 5421: Advanced Algorithms and Data Structures
-\item CSCI 5611: Animation and Planning in Games
-\item CSCI 4511W: Introduction to Artificial Intelligence
-\item CSCI 4131: Internet Programming
-\item CSCI 4707: Practice of Database Systems
-\item CSCI 3081W: Program Design and Development
 
-\end{itemize}
-}
+
+% \textbf{Relevent Coursework:} 
+% {\begin{itemize}
+% \item CSCI 5421: Advanced Algorithms and Data Structures
+% \item CSCI 5611: Animation and Planning in Games
+% \item CSCI 4511W: Introduction to Artificial Intelligence
+% \item CSCI 4131: Internet Programming
+% \item CSCI 4707: Practice of Database Systems
+% \item CSCI 3081W: Program Design and Development
+
+% \end{itemize}
+% }
 
 \section{EXPERIENCE}
 
-{\customcventry{Sept 2016 - Aug 2017}{Security Monitor}{University Security, University of Minnesota Twin Cities}{Minneapolis, MN}{}
+{\customcventry{Sept 2016 - Aug 2017}{Student Security Monitor}{Department of Public Safety, University of Minnesota-Twin Cities}{Minneapolis, MN}{}
 {\begin{itemize}
-  \item Monitored buildings and checked for all doors and windows and ensured their safety.
+  \item Monitored buildings and checked for all doors and windows to ensure safety.
   \item Investigated any matter of rule violation and complaints.
   \item Detected suspicious activities and watched for criminal acts and rule infractions.
 \end{itemize}
@@ -130,13 +134,18 @@
 \section{PROJECTS}{
 
 {
-    \customcvproject{\textbf{Buy and Sell Web Application - Coursework:}}{Sept 2019}
+
+
+{\customcvproject{\textbf{Boids and Flocking Simulation - Coursework:} }{Jul 2020 }
 {\begin{itemize}
-  \item Built an interactive Flask web application that allowed students to sign up and log in to the website.
-  \item Developed the app to allow students to sell and buy books and publish events on the website.
-  \item Incorporated the use of multiple frameworks and libraries such as SqlAlchemy, WTForms, and Bootstrap.
+  \item Created multi-agent flocking simulation using processing framework.
+  \item Simulated systems of multiple interacting particles in 2D.
+  \item Allowed the user to interact with the simulation using a mouse or keyboard for a better user experience.
 \end{itemize}
 }
+}
+\vspace{1mm}
+
 
 {\customcvproject{\textbf{Single Agent Navigation AI Simulation - Coursework:}}{Jul 2020}
 {\begin{itemize}
@@ -145,27 +154,42 @@
   \item Allowed the user to specify the starting and the ending positions of the agent or assigned it randomly by the program.
 \end{itemize}
 }
-{\customcvproject{\textbf{Boids and Flocking Simulation - Coursework:} }{Jul 2020 }
+
+
+\vspace{1mm}
+    \customcvproject{\textbf{Buy and Sell Web Application - Coursework:}}{Sept 2019}
 {\begin{itemize}
-  \item Created multi-agent flocking simulation using processing framework.
-  \item Simulated systems of multiple interacting particles in 2D.
-  \item Allowed the user to interact with the simulation using a mouse or keyboard for a better user experience.
+  \item Built an interactive Flask web application that allowed students to sign up and log in to the website.
+  \item Developed the app to allow students to sell and buy books and publish events on the website.
+  \item Incorporated the use of multiple frameworks and libraries such as SqlAlchemy, WTForms, and Bootstrap.
 \end{itemize}
 }
-}}}}
+
+
+
+}
+}
+}
 \section{SKILLS}
 
-{\customcvproject{Languages and Frameworks}{}
+{\customcvproject{Programming Languages and Frameworks}{}
 {\begin{itemize}
-  \item Java, Javascript, HTML/CSS, C/C++, Python, Ocaml, SQL, x86 Assembly and Flask.
+  \item Java, Javascript, HTML/CSS, C/C++, Python, Ocaml, SQL, x86 Assembly, and Flask.
 \end{itemize}
 }
-{\customcvproject{IDEs}{}
+{\customcvproject{Development Tools}{}
 {\begin{itemize}
-  \item Emacs, IntelliJ, Clion, Atom, Visual Studio/Code and XCode.
+  \item Emacs, IntelliJ, Clion, Atom, Visual Studio/Code, and XCode.
 \end{itemize}
 }
 }
+{\customcvproject{Spoken Languages}{}
+{\begin{itemize}
+  \item Arabic (native), and Korean (elementary).
+\end{itemize}
+}
+}
+
 }
 
 
@@ -173,8 +197,8 @@
 \begin{minipage}{\maincolumnwidth}%
 	\small{
     	\begin{itemize}
-          \item \customcvproject{Association for Computing Machinery - Member}{ Jan 2017 - Sept 2019}{}
-          \item \customcvproject{Omani Students Union - Member}{Jan 2017 - Sept 2020}{}
+          \item \customcvproject{Member, Omani Students Union}{Jan 2017 - Sept 2020}{}
+        \item \customcvproject{Member, Association for Computing Machinery}{Jan 2017 - Sept 2019}{}
 		\end{itemize}}%
 \end{minipage}%
 
