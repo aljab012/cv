@@ -38,7 +38,7 @@
 \name{Alhaitham}{Al Jabri}
  % \title{Curriculum Vitae}                               % optional, remove / comment the line if not wanted
  
-\address{2515 University Ave SE}{Minneapolis, MN 55414}{United States}% optional, remove / 
+\address{Minneapolis, MN}{United States}% optional, remove / 
 
 \newcommand*{\customcventry}[7][.25em]{
   \begin{tabular}{@{}l} 
@@ -92,32 +92,21 @@
 \vspace*{-23mm}
 
 \begin{center}
-\begin{tabular}{ c c c c c }
- \faEnvelopeO\enspace aljab012@umn.edu & \faGlobe\enspace \href{https://jabri.dev}{https://jabri.dev} & \faGithub\enspace \href{https://github.com/aljab012}{aljab012} & \faMobile\enspace 612-479-2144  & \faLinkedin \enspace \href{https://www.linkedin.com/in/alhaitham/}{/in/alhaitham}   \\  
+\begin{tabular}{ c c c c c } \faMobile\enspace 612-479-2144 & \faEnvelopeO\enspace aljab012@umn.edu &  \faGlobe\enspace \href{https://jabri.dev}{https://jabri.dev} & \faGithub\enspace \href{https://github.com/aljab012}{aljab012}   & \faLinkedin \enspace \href{https://www.linkedin.com/in/alhaitham/}{/in/alhaitham}  
 \end{tabular}
 \end{center}
 % \vspace{2mm}
 
-
+% start education sec
 \section{EDUCATION}
-{\customcventry{Jan 2017 - Dec 2020 }{B.S. in Computer Science, GPA: 3.56/4.00 }{University of Minnesota-Twin Cities}{Minneapolis, MN}{}{\vspace{2mm} \textbf{Relevent Coursework:} Advanced Algorithms and Data Structures (Grad). Animation and Planning in Games (Grad). Introduction to Artificial Intelligence. Internet Programming. Practice of Database Systems. Programming Graphics and Games. Program Design and Development.}}
+{\customcventry{Dec 2020 }{B.S. in Computer Science, GPA: 3.56/4.00 }{University of Minnesota-Twin Cities}{Minneapolis, MN}{}{\vspace{2mm} \textbf{Relevent Coursework:} Advanced Algorithms and Data Structures (Grad). Animation and Planning in Games (Grad). Introduction to Artificial Intelligence. Internet Programming. Practice of Database Systems. Programming Graphics and Games. Program Design and Development.}}
 
 \vspace{1mm}
+% end education sec
 
 
 
-% \textbf{Relevent Coursework:} 
-% {\begin{itemize}
-% \item CSCI 5421: Advanced Algorithms and Data Structures
-% \item CSCI 5611: Animation and Planning in Games
-% \item CSCI 4511W: Introduction to Artificial Intelligence
-% \item CSCI 4131: Internet Programming
-% \item CSCI 4707: Practice of Database Systems
-% \item CSCI 3081W: Program Design and Development
-
-% \end{itemize}
-% }
-
+% start experience
 \section{EXPERIENCE}
 
 {\customcventry{Sept 2016 - Aug 2017}{Student Security Monitor}{Department of Public Safety, University of Minnesota-Twin Cities}{Minneapolis, MN}{}
@@ -127,15 +116,12 @@
   \item Detected suspicious activities and watched for criminal acts and rule infractions.
 \end{itemize}
 }
+% end experience
 
-% \vspace{2mm}
-
-
+% start project sec
 \section{PROJECTS}{
-
+% TODO: ADD links
 {
-
-
 {\customcvproject{\textbf{Boids and Flocking Simulation - Coursework:} }{Jul 2020 }
 {\begin{itemize}
   \item Created multi-agent flocking simulation using processing framework.
@@ -170,8 +156,10 @@
 }
 }
 }
-\section{SKILLS}
+% end project sec
 
+% start skills sec
+\section{SKILLS}
 {\customcvproject{Programming Languages and Frameworks}{}
 {\begin{itemize}
   \item Java, Javascript, HTML/CSS, C/C++, Python, Ocaml, SQL, x86 Assembly, and Flask.
@@ -185,32 +173,37 @@
 }
 {\customcvproject{Spoken Languages}{}
 {\begin{itemize}
-  \item Arabic (native), and Korean (elementary).
+  \item Arabic (native), Korean (elementary).
 \end{itemize}
 }
 }
-
 }
 
+% end skills sec
 
+
+% start leadership sec
 \section{LEADERSHIP}
 \begin{minipage}{\maincolumnwidth}%
-	\small{
     	\begin{itemize}
           \item \customcvproject{Member, Omani Students Union}{Jan 2017 - Sept 2020}{}
         \item \customcvproject{Member, Association for Computing Machinery}{Jan 2017 - Sept 2019}{}
-		\end{itemize}}%
+		\end{itemize}
 \end{minipage}%
+% end leadership sec
 
+
+% start of award sec
 \section{AWARDS}
 \begin{minipage}{\maincolumnwidth}%
-	\small{
     	\begin{itemize}
-          \item \customcvproject{College of Science and Engineering Dean’s list}{ Fall 2019 and Spring 2019}{}
-          \item \customcvproject{Ministry of Higher Education - Oman, Full-ride merit scholarship to attend the UMN}{Sept 2015}{}
-		\end{itemize}}%
+          \item \customcvproject{College of Science and Engineering, Dean’s List}{ Fall 2019 and Spring 2019}{}
+          \item \customcvproject{Ministry of Higher Education - Oman, Full-ride merit scholarship to attend college}{Sept 2015}{}
+		\end{itemize}
 \end{minipage}%
 }
+% end of awards sec
+
 % Publications from a BibTeX file without multibib
 %  for numerical labels: \renewcommand{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% CONSIDER MERGING WITH PREAMBLE PART
 %  to redefine the heading string ("Publications"): \renewcommand{\refname}{Articles}
