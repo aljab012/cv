@@ -1,10 +1,4 @@
-%% start of file `template.tex'.
-%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
-%
-% This work may be distributed and/or modified under the
-% conditions of the LaTeX Project Public License version 1.3c,
-% available at http://www.latex-project.org/lppl/.
-
+% Template creds: Xavier Danaux 
 
 \documentclass[10pt,a4paper,roman]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
 
@@ -25,7 +19,8 @@
 %\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
 
 % adjust the page margins
-\usepackage[scale=0.8]{geometry}
+% \usepackage[scale=0.8]{geometry}
+ \usepackage[left=2cm, right=2cm, top=1.7cm, ,bottom=1.7cm]{geometry}
 \usepackage{multicol}
 
 
@@ -36,7 +31,7 @@
 %Minneapolis, MN  55414
 %United States
 \name{Alhaitham}{Al Jabri}
- % \title{Curriculum Vitae}                               % optional, remove / comment the line if not wanted
+%   \title{Software Developer}                               % optional, remove / comment the line if not wanted
  
 \address{Muscat}{Oman}% optional, remove / 
 
@@ -89,10 +84,10 @@
 %\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
 %-----       resume       ---------------------------------------------------------
 \makecvtitle
-\vspace*{-23mm}
+\vspace*{-20mm}
 
 \begin{center}
-\begin{tabular}{ c c c c c } \faMobile\enspace +968 91929531 & \faEnvelopeO\enspace jabri.dev@gmail.com &  \faGlobe\enspace \href{https://jabri.dev}{https://jabri.dev} & \faGithub\enspace \href{https://github.com/aljab012}{aljab012}   & \faLinkedin \enspace \href{https://www.linkedin.com/in/alhaitham/}{/in/alhaitham}  
+\begin{tabular}{ c c c c c }  \faEnvelopeO\enspace jabri.dev@gmail.com &  \faGlobe\enspace \href{jabri.dev}{jabri.dev} & \faGithub\enspace \href{https://github.com/aljab012}{aljab012}   & \faLinkedin \enspace \href{https://www.linkedin.com/in/alhaitham/}{/in/alhaitham}  & \faMobile\enspace +968 91929531
 \end{tabular}
 \end{center}
 % \vspace{2mm}
@@ -101,7 +96,7 @@
 \section{EDUCATION}
 {\customcventry{Dec 2020 }{B.S. in Computer Science, GPA: 3.56/4.00 }{University of Minnesota-Twin Cities}{Minneapolis, MN}{}{\vspace{2mm} \textbf{Relevent Coursework:} Advanced Algorithms and Data Structures (Grad). Animation and Planning in Games (Grad). Introduction to Artificial Intelligence. Internet Programming. Practice of Database Systems. Programming Graphics and Games. Program Design and Development.}}
 
-\vspace{1mm}
+% \vspace{1mm}
 % end education sec
 
 
@@ -109,13 +104,34 @@
 % start experience
 \section{EXPERIENCE}
 
-{\customcventry{Sept 2016 - Aug 2017}{Student Security Monitor}{Department of Public Safety, University of Minnesota-Twin Cities}{Minneapolis, MN}{}
+
+{\customcventry{Sept 2021 - Present}{Software Engineer - Full-time}{Rihal - Data Solutions}{Muscat, Oman}{}
 {\begin{itemize}
-  \item Monitored buildings and checked for all doors and windows to ensure safety.
-  \item Investigated any matter of rule violation and complaints.
-  \item Detected suspicious activities and watched for criminal acts and rule infractions.
+  \item Deployed apps to production servers using {\textbf {Docker}}.
+  \item Worked as the {\textbf {Team Leader}} to handle requirement gathering with stakeholders.
+  \item Reviewed over 50+ pull requests on {\textbf {GitHub}} to improve code quality and practices.
+  \item Constructed {\textbf {CI/CD infrastructure}} using {\textbf {GitHub Actions}} and {\textbf {Harbor}} as a private registry.
+  \item Updated over 30+ deprecated end-to-end tests using {\textbf {Cypress}}.
+  \item Added 10+ core features independently to an existing project using {\textbf {Golang}} for back-end and {\textbf {React}} with Typescript for front-end.
 \end{itemize}
 }
+}
+{\customcventry{Apr 2021 - Sept 2021}{Software Engineer - Intern}{Rihal - Data Solutions}{Muscat, Oman}{}
+{\begin{itemize}
+  \item Accelerated {\textbf {PostgreSQL}} queries with cached materialized views resulting in {\textbf {1000x speed}} improvement.
+  \item Updated the existing front-end interface from {\textbf {Material-UI}} to {\textbf {Carbon Design System}}.
+  \item Designed and built a new dashboard to show live metrics from database.
+\end{itemize}
+}
+
+
+% {\customcventry{Sept 2016 - Aug 2017}{Student Security Monitor}{Department of Public Safety, University of Minnesota-Twin Cities}{Minneapolis, MN}{}
+% {\begin{itemize}
+%   \item Monitored buildings and checked for all doors and windows to ensure safety.
+%   \item Investigated any matter of rule violation and complaints.
+%   \item Detected suspicious activities and watched for criminal acts and rule infractions.
+% \end{itemize}
+% }
 % end experience
 
 % start project sec
@@ -130,7 +146,7 @@
 \end{itemize}
 }
 }
-\vspace{1mm}
+% \vspace{1mm}
 
 
 {\customcvproject{\textbf{Single Agent Navigation AI Simulation - Coursework:}}{Jul 2020}
@@ -142,7 +158,7 @@
 }
 
 
-\vspace{1mm}
+% \vspace{1mm}
     \customcvproject{\textbf{Buy and Sell Web Application - Coursework:}}{Sept 2019}
 {\begin{itemize}
   \item Built an interactive Flask web application that allowed students to sign up and log in to the website.
@@ -160,20 +176,15 @@
 
 % start skills sec
 \section{SKILLS}
-{\customcvproject{Programming Languages and Frameworks}{}
+{\customcvproject{Languages \& Frameworks:}{}
 {\begin{itemize}
-  \item Java, Javascript, HTML/CSS, C/C++, Python, Ocaml, SQL, x86 Assembly, and Flask.
+  \item Fluent: Golang, PostgreSQL, Typescript/JavaScript, React, HTML, SASS/CSS.
+  \item Familiar: OCaml, Java, C/C++, Python, Django/Flask, x86 assembly.
 \end{itemize}
 }
-{\customcvproject{Development Tools}{}
+{\customcvproject{Miscellaneous:}{}
 {\begin{itemize}
-  \item Emacs, IntelliJ, Clion, Atom, Visual Studio/Code, and XCode.
-\end{itemize}
-}
-}
-{\customcvproject{Spoken Languages}{}
-{\begin{itemize}
-  \item Arabic (native), Korean (elementary).
+  \item Bash, Docker, Cypress, Webpack, OPA, Git/GitHub, Linux and Emacs.
 \end{itemize}
 }
 }
